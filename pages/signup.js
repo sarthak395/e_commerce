@@ -77,19 +77,19 @@ const signup = () => {
                         </h1>
                         <form className="space-y-4 md:space-y-6" onSubmit={handlesubmit}>
                             <div>
-                                <label for="name" className="block mb-2 text-sm font-medium ">Full Name</label>
+                                <label htmlFor="name" className="block mb-2 text-sm font-medium ">Full Name</label>
                                 <input value={name} onChange={handlechange} type="text" name="name" id="name" className="focus:shadow-xl border border-gray-300  sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Darwin Vinayak Gupta" required="true" />
                             </div>
                             <div>
-                                <label for="contact" className="block mb-2 text-sm font-medium ">Your Contact</label>
+                                <label htmlFor="contact" className="block mb-2 text-sm font-medium ">Your Contact</label>
                                 <input value={contact} onChange={handlechange} type="number" name="contact" id="contact" className="focus:shadow-xl border border-gray-300  sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="+91 XXXXXXXXXX" required="true" />
                             </div>
                             <div>
-                                <label for="email" className="block mb-2 text-sm font-medium ">Your email</label>
+                                <label htmlFor="email" className="block mb-2 text-sm font-medium ">Your email</label>
                                 <input value={email} onChange={handlechange} type="email" name="email" id="email" className="focus:shadow-xl border border-gray-300  sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required="true" />
                             </div>
                             <div>
-                                <label for="password" className="block mb-2 text-sm font-medium ">Password</label>
+                                <label htmlFor="password" className="block mb-2 text-sm font-medium ">Password</label>
                                 <input value={password} onChange={handlechange} type="password" name="password" id="password" placeholder="••••••••" className="focus:shadow-xl border border-gray-300  sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-400 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" required="true" />
                             </div>
                             <div className="flex items-start">
@@ -97,7 +97,7 @@ const signup = () => {
                                     <input onChange={handlechange} id="terms" aria-describedby="terms" type="checkbox" className="w-4 h-4 border border-gray-300 rounded  focus:ring-3 focus:ring-primary-300  dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required="true" />
                                 </div>
                                 <div className="ml-3 text-sm">
-                                    <label for="terms" className="font-light ">I accept the <a className="font-medium text-primary-600 hover:underline dark:text-primary-500" href="https://www.termsandconditionsgenerator.com/live.php?token=kUcotjA761thU88qNnAt9i5dxj6AbhZD">Terms and Conditions</a></label>
+                                    <label htmlFor="terms" className="font-light ">I accept the <a className="font-medium text-primary-600 hover:underline dark:text-primary-500" href="https://www.termsandconditionsgenerator.com/live.php?token=kUcotjA761thU88qNnAt9i5dxj6AbhZD">Terms and Conditions</a></label>
                                 </div>
                             </div>
                             <button type="submit" className="w-full text-white bg-blue-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 focus:bg-blue-400 transition-{ ease-out .5s} font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Create an account</button>

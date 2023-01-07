@@ -65,7 +65,7 @@ const slug = ({ buyNow, clearCart, addtocart, tshirt, colorsizeslug }) => {
 
                 <div className="mt-1">
                   {Object.keys(colorsizeslug).map((item) => {
-                    return (Object.keys(colorsizeslug[item]).includes(size) && <button onClick={(e) => { refreshvariants(item, size) }} className={`border-2  ml-1  rounded-full w-6 h-6 focus:outline-none ${color == item ? "border-black" : "border-gray-300"}`} style={{ backgroundColor: item }}></button>)
+                    return (Object.keys(colorsizeslug[item]).includes(size) && <button key ={item} onClick={(e) => { refreshvariants(item, size) }} className={`border-2  ml-1  rounded-full w-6 h-6 focus:outline-none ${color == item ? "border-black" : "border-gray-300"}`} style={{ backgroundColor: item }}></button>)
                   })}
                 </div>
 
@@ -76,7 +76,7 @@ const slug = ({ buyNow, clearCart, addtocart, tshirt, colorsizeslug }) => {
 
                   <select value={size} onChange={(e) => { refreshvariants(color, e.target.value); }} className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
                     {Object.keys(colorsizeslug[color]).map((size) => {
-                      return (<option>{size}</option>)
+                      return (<option key = {size}>{size}</option>)
                     })}
                   </select>
 
