@@ -27,7 +27,7 @@ const hoodies = ({ products }) => {
                   </div>
                   <div className="mt-1">
                     {products[item].color.map((col)=>{
-                      return (<button className="border-2 border-gray-300 ml-1  rounded-full w-6 h-6 focus:outline-none" style={{backgroundColor:col}}></button>)
+                      return (<button key={col} className="border-2 border-gray-300 ml-1  rounded-full w-6 h-6 focus:outline-none" style={{backgroundColor:col}}></button>)
                     })}
                     </div>
                 </div>

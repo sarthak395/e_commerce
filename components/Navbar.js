@@ -81,16 +81,16 @@ const Navbar = ({ logout, user, cart, addtocart, removefromcart, clearCart, subt
 
 
         {/* Dropdown Menu */}
-        {dropdown && <div id="dropdown" onMouseLeave={toggleDropdown} class="absolute top-12 right-16 z-10 w-44  bg-white rounded my-3 divide-y divide-gray-100 shadow dark:bg-gray-700">
-          <ul class="py-1 text-sm text-gray-700 dark:text-gray-200 transition ease-in origin-top-left duration-200" aria-labelledby="dropdownDefault">
+        {dropdown && <div id="dropdown" onMouseLeave={toggleDropdown} className="absolute top-12 right-16 z-10 w-44  bg-white rounded my-3 divide-y divide-gray-100 shadow dark:bg-gray-700">
+          <ul className="py-1 text-sm text-gray-700 dark:text-gray-200 transition ease-in origin-top-left duration-200" aria-labelledby="dropdownDefault">
             <li className='dark:hover:bg-gray-500'>
-              <a href="#" class="block py-2 px-4">My Account</a>
+              <a href="#" className="block py-2 px-4">My Account</a>
             </li>
             <li className='dark:hover:bg-gray-500'>
-              <a href="#" class="block py-2 px-4">Orders</a>
+              <a href="#" className="block py-2 px-4">Orders</a>
             </li>
             <li className='dark:hover:bg-gray-500'>
-              <button onClick={handlelogout} href="#" class="block py-2 px-4">Logout</button>
+              <button onClick={handlelogout} href="#" className="block py-2 px-4">Logout</button>
             </li>
           </ul>
         </div>}
